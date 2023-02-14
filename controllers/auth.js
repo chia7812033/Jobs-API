@@ -29,7 +29,7 @@ const login = async (req, res) => {
   // Check the user is exists
   const user = await User.findOne({ email })
   if (!user) {
-    throw new UnauthenticatedError('Invalid credentials')
+    throw new UnauthenticatedError('The user not exists')
   }
 
   // Check the password is correct

@@ -37,7 +37,7 @@ app.use(cors())
 app.use(xss())
 
 
-app.get('/', (req, res) => {
+app.get('/api/v1/', (req, res) => {
   res.send('job api')
 })
 // routes
